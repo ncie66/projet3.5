@@ -98,6 +98,8 @@ require 'php/header.php';
         	<div class="panel panel-default"></div> 
         		<div class="panel-heading"></div>
                 <div class="panel-body"></div> 
+
+                <h1> S'inscrire </h1> 
     <form action="" method="POST">
 
         <div class="form-group">

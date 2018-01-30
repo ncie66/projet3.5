@@ -3,7 +3,7 @@
 session_start(); 
 
 require 'php/functions.php';
-
+reconnect_cookie();
 logged_only();
 
 if(!empty($_POST)){
