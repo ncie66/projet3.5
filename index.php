@@ -1,3 +1,5 @@
+<?php require 'php/header.php'; ?>
+
 <!DOCTYPE html>
 <html lang="fr">
 <head>
@@ -11,3 +13,5 @@
     
 </body>
 </html>
+
+<?php require 'php/footer.php'; ?>
