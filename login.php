@@ -37,7 +37,7 @@ if(isset($_SESSION['auth'])){
                 $pdo->prepare('UPDATE user SET reset_token_date = NOW() WHERE id = ?')->execute([$user->id]);
             }
 
-            header('Location: profil.php');
+            header('Location: index.php');
 
             exit();
 
@@ -49,29 +49,28 @@ if(isset($_SESSION['auth'])){
     }
     require 'php/header.php';
 ?>
-
+<link href="css/styleform.css" rel='stylesheet'/>
 
 <h1> Se connecter </h1> 
     
-<form class="" id="" action="" method="POST">
+<div class="formcontact">
+    <form class="" id="" action="" method="POST">
 
-    <div class="form-group">
-        <label>Pseudo ou email  </label>
-            <input type="text" name="username" size="30"/> <br><br>
-    </div>
-    <div class="form-group">
-        <label>Mot de passe <a href="forgetpassword.php">(Mot de passe oublié)</a></label>
-            <input type="password" name="password" size="30"/> <br><br>
-    </div>
-    <div class="form-group">
-        <label>Se souvenir de moi</label>
-            <input type="checkbox" name="remember" value="1" /> <br><br>
-    </div>
-    <button type="submit" class="btn btn-dark">Se connecter</button>
+        <div class="form-group">
+            <label>Pseudo ou email  </label>
+                <input type="text" name="username" size="30"/> <br><br>
+        </div>
+        <div class="form-group">
+            <label>Mot de passe <a href="forgetpassword.php">(Mot de passe oublié)</a></label>
+                <input type="password" name="password" size="30"/> <br><br>
+        </div>
+        <div class="form-group">
+            <label>Se souvenir de moi</label>
+                <input type="checkbox" name="remember" value="1" /> <br><br>
+        </div>
+        <button type="submit" class="btn btn-dark">Se connecter</button>
 
-</form>
+    </form>
+</div><br><br>
 
 <?php require 'php/footer.php'; ?> 
-
-</body>
-</html>

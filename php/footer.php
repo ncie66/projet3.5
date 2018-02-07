@@ -18,7 +18,7 @@
 					<ul class="menu">
 								
 							<li>
-							<a href="#">Accueil</a>
+							<a href="index.php">Accueil</a>
 							</li>
 								
 							<li>
@@ -26,15 +26,15 @@
 							</li>
 								
 							<li>
-							<a href="#">Blog</a>
+							<a href="#">A venir</a>
 							</li>
 								
 							<li>
-								<a href="#">Gallery</a>
+								<a href="#">A venir</a>
 							</li>
 								
 							<li>
-							<a href="#">Contact</a>
+							<a href="contact.php">Contact</a>
 							</li>
 				
 					</ul>
@@ -48,7 +48,7 @@
 <div class="container">
 
 	<div class="row text-center">
-	<p>Copyright © 2017 All rights reserved</p>
+	<p>Myhobbie © 2018 All rights reserved</p>
 	</div>
 		
 	</div>

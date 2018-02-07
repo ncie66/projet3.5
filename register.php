@@ -83,7 +83,7 @@ if(!empty($_POST)){
         $_SESSION['flash']['success'] = "Un email de confirmation vous a été envoyé pour valider votre compte";
         header('Location: login.php');
         exit();
-        alert('Votre inscription a réussi ! Amusez-vous bien sur VMP');
+        alert('Votre inscription a réussi ! Amusez-vous bien sur Myhobbie.fr');
     }
 }
 
@@ -91,7 +91,7 @@ if(!empty($_POST)){
 require 'php/header.php';
 
 ?> 
-<body>
+<link href="css/styleform.css" rel='stylesheet'/>
 <div class="container">
         <div class="row centered-form"></div> 
         <div class="col-xs-12 col-sm-8 col-md-4 col-sm-offset-2 col-md-offset-4"></div> 
@@ -100,6 +100,7 @@ require 'php/header.php';
                 <div class="panel-body"></div> 
 
                 <h1> S'inscrire </h1> 
+                <div class="formcontact">
     <form action="" method="POST">
 
         <div class="form-group">
