@@ -1,5 +1,4 @@
 <?php 
-
 require_once 'php/functions.php';
 reconnect_cookie();
 

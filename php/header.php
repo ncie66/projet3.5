@@ -20,6 +20,7 @@ if(session_status() == PHP_SESSION_NONE){
 
     <!-- Bootstrap core CSS -->
    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+   <link rel="stylesheet" href="css/style.css">
   </head>
 
   <body>
@@ -59,7 +60,7 @@ if(session_status() == PHP_SESSION_NONE){
 
             <?php foreach($_SESSION['flash'] as $type =>$message): ?> 
 
-                <div class="alert alert-<?= $type; ?>"> 
+                <div class="alert alert-<?= $type; ?>">
 
                       <?= $message; ?> 
                       
@@ -72,11 +73,3 @@ if(session_status() == PHP_SESSION_NONE){
             <?php unset($_SESSION['flash']); ?>
 
           <?php endif ?>
-
-    </main>
-
-<script src="js/jquery-3.2.1.slim.min.js"></script>
-<script src="js/popper.min.js"></script>
-<script src="js/bootstrap.min.js"></script>
-</body>
-</html>

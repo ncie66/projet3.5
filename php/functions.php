@@ -33,6 +33,11 @@ function sendMail( $email, $subject, $content ){
     $mail = new PHPMailer(true);                              // Passing `true` enables exceptions
     try {
 
+        //config
+        // $mail->isSMTP();
+        // $mail->Host = "smtp.gmail.com";
+        // $mail->Port = 25;
+
         //Recipients
         $mail->setFrom('ym66300@gmail.com', 'Yohann');
         $mail->addAddress( $email, 'Client');     // Add a recipiente
@@ -48,6 +53,7 @@ function sendMail( $email, $subject, $content ){
             "statut" => true
         ];
     } catch (Exception $e) {
+       // mail( $email, $subject, $content );
         return [
             "statut" => false,
             "error" => $e
