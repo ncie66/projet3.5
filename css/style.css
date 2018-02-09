@@ -26,11 +26,11 @@ body {margin:0;}
   display: none;
   width: 100%;
   height: 100%;
-  background: white;
-  /* display: flex; */
+  background-color: white;
   flex-wrap:wrap;
   justify-content: space-around;
   margin: auto;
+  overflow: auto;
 }
 .s-cat {
   background-color: blue;
@@ -38,6 +38,7 @@ body {margin:0;}
   background-size: cover;
   background-repeat: no-repeat;
   margin: 10px;
+  height: 210px;
 }
 .s-cat-container {
   z-index: 9999;
@@ -64,6 +65,7 @@ body {margin:0;}
 .category-auto {
     background-color: blue;
     width: 30%;
+    height: 166px;
     background-size: cover;
     background-repeat: no-repeat;
     margin: 10px;
@@ -75,8 +77,9 @@ body {margin:0;}
   display: flex;
 }
 div .mecanique{
-  width: 33%;
+  width: 31%;
   margin: 0%;
   background-image: url("../images/mecanique.png");
   background-repeat: no-repeat;
+  margin: 10px;
 }
