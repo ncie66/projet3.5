@@ -1,13 +1,12 @@
 body {margin:0;}
 
 .containeur {
-  width:100%;
-  margin: 2%;
   height: auto;
   min-height: 50vw;
   background:white;
   display: flex;
   flex-wrap:wrap;
+  justify-content: space-around;
 }
 
 .category {
@@ -28,13 +27,46 @@ body {margin:0;}
   width: 100%;
   height: 100%;
   background: white;
+  /* display: flex; */
+  flex-wrap:wrap;
+  justify-content: space-around;
+  margin: auto;
+}
+.s-cat {
+  background-color: blue;
+  width: 30%;
+  background-size: cover;
+  background-repeat: no-repeat;
+  margin: 10px;
+}
+.s-cat-container {
+  z-index: 9999;
+  top: 8%;
+  left: 0;
+  position: fixed;
+  display: none;
+  width: 100%;
+  height: 100%;
+  background: white;
+}
+
+.auto{
+  background-image: url(../images/automobile.jpeg);
+}
+.mecanique{
+  background-image: url(../images/mecanique.png);
+
+}
+.astro{
+  background-image: url(../images/astro.jpeg);
 }
 
 .category-auto {
-  width: 33%;
-  margin: 0%;
-  background-image: url("../images/automobile.jpg");
-  background-repeat: no-repeat;
+    background-color: blue;
+    width: 30%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    margin: 10px;
 }
 
 .categories{
