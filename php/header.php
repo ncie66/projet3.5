@@ -15,6 +15,7 @@ if(session_status() == PHP_SESSION_NONE){
     <meta name="description" content="">
     <meta name="author" content="">
     <link rel="icon" href="../../../../favicon.ico">
+    <link rel="shortcut icon" href="images/favicon.ico"/>
 
     <title>My hobbie</title>
 

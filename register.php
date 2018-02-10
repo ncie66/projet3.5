@@ -79,7 +79,7 @@ if(!empty($_POST)){
 
         $user_id = $pdo->lastInsertId();
 
-        sendMail($_POST['email'], 'Confirmation de votre compte', "Afin de valider votre compte, merci de cliquer sur ce lien\n\nhttp://localhost:8888/Projet/confirm.php?id=$user_id&token=$token");
+        sendMail($_POST['email'], 'Confirmation de votre compte', "Afin de valider votre compte, merci de cliquer sur ce lien\n\nhttp://www.myhobbie.fr/confirm.php?id=$user_id&token=$token");
         $_SESSION['flash']['success'] = "Un email de confirmation vous a été envoyé pour valider votre compte";
         header('Location: login.php');
         exit();

@@ -39,7 +39,7 @@ function sendMail( $email, $subject, $content ){
         // $mail->Port = 25;
 
         //Recipients
-        $mail->setFrom('ym66300@gmail.com', 'Yohann');
+        $mail->setFrom('support@myhobbie.fr', 'Myhobbie.fr');
         $mail->addAddress( $email, 'Client');     // Add a recipiente
 
         //Content
@@ -88,7 +88,7 @@ function reconnect_cookie(){
         $user= $req->fetch();
 
         if($user){
-            $expected = $user->id .'//'.$user->remember_token . sha1($user->id . 'projetncie');
+            $expected = $user->id .'//'.$user->remember_token . sha1($user->id . 'cookiehobbie');
             
             if($expected == $remember_token){
                 

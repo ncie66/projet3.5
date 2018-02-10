@@ -32,7 +32,7 @@ if(isset($_SESSION['auth'])){
 
                 $pdo->prepare('UPDATE user SET remember_token = ? WHERE id = ?')->execute([$remember_token, $user->id]);
 
-                $reset_token_date = setcookie('remember', $user->id . '//' . $remember_token . sha1($user->id . 'projetncie'), time() + 60  * 60 * 24 * 7);                
+                $reset_token_date = setcookie('remember', $user->id . '//' . $remember_token . sha1($user->id . 'projetneci'), time() + 60  * 60 * 24 * 7);                
 
                 $pdo->prepare('UPDATE user SET reset_token_date = NOW() WHERE id = ?')->execute([$user->id]);
             }
