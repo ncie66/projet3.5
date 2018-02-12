@@ -36,6 +36,7 @@ if(session_status() == PHP_SESSION_NONE){
           <li class="nav-item active">
           <?php if (isset($_SESSION['auth'])): ?> 
               <li> <a href="logout.php">Se deconnecter</a></li>
+              <li> <a href="profil.php">Profil</a></li>
             
           </li>
           <li class="nav-item">
@@ -43,12 +44,14 @@ if(session_status() == PHP_SESSION_NONE){
               <?php else: ?> 
                 <li> <a href="register.php">S'inscrire</a></li>
                 <li> <a href="login.php">Se connecter</a></li>
+                <li> <a href="profil.php">Profil</a></li>
               <?php endif; ?>
 
           </li>
         </ul>
-        
+
         <form class="form-inline my-2 my-lg-0">
+        <button class="btn btn-outline-danger my-2 my-sm-0" type="submit">Ajouter une catégorie</button>
           <input class="form-control mr-sm-2" type="text" placeholder="Recherche..." aria-label="Search"/>
           <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Recherche</button>
         </form>

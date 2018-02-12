@@ -23,6 +23,11 @@ if(!empty($_POST)){
     }
 }
 
+if(isset($_FILES['photoprofil']) AND !empty($_FILES['photoprofil']['name'])){
+    $taillemax = 4194304;
+    
+}
+
 require 'php/header.php'; 
 
 ?> 
@@ -30,13 +35,17 @@ require 'php/header.php';
 
 <h1> Salut <?= $_SESSION['auth']->username; ?>  </h1> 
 
-<form action="" method="POST">
+<form action="" method="POST" enctype="multipart/form-data">
 
     <div class="form-profil">
         <input class="form-control" type="password" name="password" placeholder="Nouveau mot de passe">
     </div><br>
     <div class="form-profil">
         <input class="form-control" type="password" name="confirm_password" placeholder="Confirmation nouveau de mot de passe">
+    </div>
+    <div class="form-profil">
+       <label></label>
+       <input type="file" name="photoprofil">
     </div>
     <button type="submit" class="btn btn-dark">Confirmer</button>
 

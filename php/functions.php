@@ -61,6 +61,39 @@ function sendMail( $email, $subject, $content ){
     }
 }
 
+function recevedMail( $email, $subject, $content ){
+
+    $mail = new PHPMailer(true);                              // Passing `true` enables exceptions
+    try {
+
+        //config
+        // $mail->isSMTP();
+        // $mail->Host = "smtp.gmail.com";
+        // $mail->Port = 25;
+
+        //Recipients
+        $mail->setFrom($_POST['email']);
+        $mail->addAddress( 'support@myhobbie.fr' );     // Add a recipiente
+
+        //Content
+        $mail->isHTML(true);                                  // Set email format to HTML
+        $mail->Subject = $subject;
+        $mail->Body    = "<div>" . $content . "</div>";
+        $mail->AltBody = $content;
+
+        $mail->send();
+        return [
+            "statut" => true
+        ];
+    } catch (Exception $e) {
+       // mail( $email, $subject, $content );
+        return [
+            "statut" => false,
+            "error" => $e
+        ];
+    }
+}
+
 function reconnect_cookie(){
 
     if(session_status() == PHP_SESSION_NONE ){

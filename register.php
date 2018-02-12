@@ -133,7 +133,7 @@ require 'php/header.php';
         <button type="submit" class="btn btn-dark">M'inscrire</button>
 
     </form>
-</div> 
+</div> <br><br><br><br>
 
 </body>
 

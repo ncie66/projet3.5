@@ -5,25 +5,24 @@
   <div class="category-auto auto">
 
     <div class="sub-category">
-      <div class="s-cat mecanique"></div>
-      <div class="s-cat mecanique"></div>
-      <div class="s-cat mecanique"></div>
-      <div class="s-cat mecanique"></div> <div class="s-cat mecanique"></div>
-      <div class="s-cat mecanique"></div> <div class="s-cat mecanique"></div>
-      <div class="s-cat mecanique"></div> <div class="s-cat mecanique"></div>
-      <div class="s-cat mecanique"></div> <div class="s-cat mecanique"></div>
-      <div class="s-cat mecanique"></div> <div class="s-cat mecanique"></div>
-      <div class="s-cat mecanique"></div> <div class="s-cat mecanique"></div>
-      <div class="s-cat mecanique"></div> <div class="s-cat mecanique"></div>
-      <div class="s-cat mecanique"></div> <div class="s-cat mecanique"></div>
-      <div class="s-cat mecanique"></div> <div class="s-cat mecanique"></div>
-      <div class="s-cat mecanique"></div> <div class="s-cat mecanique"></div>
-      <div class="s-cat mecanique"></div>
-      <div class="s-cat mecanique"> 
-        <div class="s-cat-container">
-          sdkqsj
+      <div class="s-cat mecanique">
+      <div class="s-cat-container">
+          ici viendra le chat
         </div>
       </div>
+      <div class="s-cat mecanique"></div>
+      <div class="s-cat mecanique"></div>
+      <div class="s-cat mecanique"></div>
+      <div class="s-cat mecanique"></div>
+      <div class="s-cat mecanique"></div>
+      <div class="s-cat mecanique"></div>
+      <div class="s-cat mecanique"></div>
+      <div class="s-cat mecanique"></div>
+      <div class="s-cat mecanique"></div>
+      <div class="s-cat mecanique"></div>
+      <div class="s-cat mecanique"></div>
+      <div class="s-cat mecanique"></div>
+      <div class="s-cat mecanique"></div>
       <div class="s-cat mecanique "></div>
 
     </div>
@@ -50,41 +49,8 @@
   <div class="category-auto"></div>
   <div class="category-auto"></div>
   <div class="category-auto"></div>
-  <div class="category-auto"></div>
-  <div class="category-auto"></div>
-  <div class="category-auto"></div>
-  <div class="category-auto"></div>
-  <div class="category-auto"></div>
-  <div class="category-auto"></div>
-  <div class="category-auto"></div>
-  <div class="category-auto"></div>
-  <div class="category-auto"></div>
-  <div class="category-auto"></div>
-  <div class="category-auto"></div>
-  <div class="category-auto"></div>
-  <div class="category-auto"></div>
-  <div class="category-auto"></div>
-  <div class="category-auto"></div>  
-  <div class="category-auto"></div>
-  <div class="category-auto"></div>
-  <div class="category-auto"></div>
-  <div class="category-auto"></div>
-  <div class="category-auto"></div>
-  <div class="category-auto"></div>
-  <div class="category-auto"></div>
-  <div class="category-auto"></div>
-  <div class="category-auto"></div>
-  <div class="category-auto"></div>
-  <div class="category-auto"></div>
-  <div class="category-auto"></div>
-  <div class="category-auto"></div>
-  <div class="category-auto"></div>
-  <div class="category-auto"></div>
-  <div class="category-auto"></div>
-  <div class="category-auto"></div>
-  <div class="category-auto"></div>
-  <div class="category-auto"></div>
-  <div class="category-auto"></div>
+
+
 </div>
 
 <?php require 'php/footer.php'; ?>
