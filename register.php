@@ -8,7 +8,6 @@ if(!empty($_POST)){
 
     require_once'php/database.php';
 
-
     if(empty($_POST['username']) || !preg_match('/^[a-zA-Z0-9_]+$/', $_POST['username'])){
 
         $errors['username'] = "Champs non rempli ou caractère non pris en charge";
@@ -21,7 +20,6 @@ if(!empty($_POST)){
                 $errors['username'] = 'Ce pseudo est déjà pris';
         }
     }
-
 
     if(empty($_POST['email']) || !filter_var($_POST['email'], FILTER_VALIDATE_EMAIL)){
         $errors['email'] = "Email non valide";

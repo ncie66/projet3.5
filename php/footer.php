@@ -22,7 +22,7 @@
 							</li>
 								
 							<li>
-								<a href="#">A propos</a>
+								<a href="apropos.php">A propos</a>
 							</li>
 								
 							<li>
