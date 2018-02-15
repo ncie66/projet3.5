@@ -12,7 +12,9 @@ $('.sub-category').on('click', function( e ){
 });
 
 $('.s-cat').click(function(){
-    $(this).children('.s-cat-container').css('display', 'flex');
+    console.log("test");
+    document.location.replace("chat.php?"+$(this).attr("id"));
+   // $(this).children('.s-cat-container').css('display', 'flex');
 });
 $('.s-cat-container').on('click', function( e ){
     e.stopPropagation();

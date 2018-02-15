@@ -54,7 +54,7 @@ body {margin:0;}
 .auto{
   background-image: url(../images/automobile.jpeg);
 }
-.mecanique{
+#mecanique{
   background-image: url(../images/mecanique.png);
 
 }
