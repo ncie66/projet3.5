@@ -57,7 +57,7 @@ io.on('connection', function (socket) {
     if (loggedUser !== undefined) {
       // Broadcast d'un 'service-message'
       var serviceMessage = {
-        text: 'User "' + loggedUser.username + '" disconnected',
+        text: 'L\'utilisateur "' + loggedUser.username + '" s\'est déconnécté',
         type: 'logout'
       };
       socket.broadcast.emit('service-message', serviceMessage);
@@ -66,6 +66,7 @@ io.on('connection', function (socket) {
       if (userIndex !== -1) {
         users.splice(userIndex, 1);
       }
+      -
       // Ajout du message à l'historique
       messages.push(serviceMessage);
       // Emission d'un 'user-logout' contenant le user
