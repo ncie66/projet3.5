@@ -15,7 +15,8 @@ var typingUsers = [];
 var loggedUser;
 
 io.sockets.on("connection", function( socket ){ 
-    socket.emit('user:list', MServer.users);
+    console.log(MServer.users);
+    socket.emit('user:list', MServer.users, MServer.messages);
     socket.on('user:connect', function(username){
         let user = {
             id: socket.id,
@@ -27,32 +28,42 @@ io.sockets.on("connection", function( socket ){
         socket.broadcast.emit('user:new', user.username);
     });
 
+    socket.on("user:typing", function(etat){
+        let user = MServer.getUserBySocketId(socket.id);
+        socket.broadcast.emit('user:typing', etat, user.username);
+    });
+
     socket.on('user:sendMessage', function(message){
         let user = MServer.getUserBySocketId(socket.id);
         let data = {
             username: user.username,
             message: message.text
         };
+        MServer.addMessage( user.username, message.text );
         socket.broadcast.emit('user:receiveMessage', data);
     });
 
-    socket.on('', function (etat) {
+    // socket.on('', function (etat) {
 
-        let user = MServer.getUserBySocketId(socket.id);
-        socket.broadcast.emit('user:typing', etat, user.username);
+    //     let user = MServer.getUserBySocketId(socket.id);
+    //     socket.broadcast.emit('user:typing', etat, user.username);
 
-        // console.log('start-typing')
-        // // Ajout du user à la liste des utilisateurs en cours de saisie
-        // if (typingUsers.indexOf(loggedUser) === -1) {
-        // typingUsers.push(loggedUser);
-        // }
-        // io.emit('update-typing', typingUsers);
-    });
+    //     // console.log('start-typing')
+    //     // // Ajout du user à la liste des utilisateurs en cours de saisie
+    //     // if (typingUsers.indexOf(loggedUser) === -1) {
+    //     // typingUsers.push(loggedUser);
+    //     // }
+    //     // io.emit('update-typing', typingUsers);
+    // });
     
     socket.on("disconnect", function() {
+        console.log('disconnect');
         let user = MServer.getUserBySocketId(socket.id);
         MServer.removeUser(socket.id);
-        socket.broadcast.emit('user:disconnect', user);
+
+        if(user){
+            socket.broadcast.emit('user:disconnect', user.username);
+        }
     });
     
 });
