@@ -17,27 +17,28 @@ var loggedUser;
 io.sockets.on("connection", function( socket ){ 
     console.log(MServer.users);
     socket.emit('user:list', MServer.users, MServer.messages);
-    socket.on('user:connect', function(username){
+    socket.on('user:connect', function(body){
         let user = {
             id: socket.id,
-            username: username
+            username: body.username,
+            cat: body.cat
         };
         loggedUser = user;
         MServer.addUser(user);
         socket.emit('user:etat', true);
-        socket.broadcast.emit('user:new', user.username);
+        socket.broadcast.emit('user:new', user);
     });
 
     socket.on("user:typing", function(etat){
         let user = MServer.getUserBySocketId(socket.id);
-        socket.broadcast.emit('user:typing', etat, user.username);
+        socket.broadcast.emit('user:typing', etat, user);
     });
 
     socket.on('user:sendMessage', function(message){
         let user = MServer.getUserBySocketId(socket.id);
         let data = {
             username: user.username,
-            message: message.text
+            message: message
         };
         MServer.addMessage( user.username, message.text );
         socket.broadcast.emit('user:receiveMessage', data);
@@ -62,7 +63,7 @@ io.sockets.on("connection", function( socket ){
         MServer.removeUser(socket.id);
 
         if(user){
-            socket.broadcast.emit('user:disconnect', user.username);
+            socket.broadcast.emit('user:disconnect', user);
         }
     });
     
