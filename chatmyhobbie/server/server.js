@@ -56,7 +56,7 @@ io.sockets.on("connection", function( socket ){
     //     // }
     //     // io.emit('update-typing', typingUsers);
     // });
-    
+
     socket.on("disconnect", function() {
         console.log('disconnect');
         let user = MServer.getUserBySocketId(socket.id);

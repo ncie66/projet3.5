@@ -25,8 +25,14 @@ function scrollToBottom() {
 $('#login form').submit(function (e) {
   e.preventDefault();
   username = $('#login input').val().trim();
+  var cat = $_GET("categorie");
+  let body = {
+    username: username,
+    cat: cat
+  };
+  console.log(cat);
   if (username.length > 0) { // Si le champ de connexion n'est pas vide
-    socket.emit('user:connect', username);
+    socket.emit('user:connect', body);
   }
 });
 
@@ -36,7 +42,8 @@ $('#login form').submit(function (e) {
 $('#chat form').submit(function (e) {
   e.preventDefault();
   var message = {
-    text : $('#m').val()
+    text : $('#m').val(),
+    cat: $_GET("categorie")
   };
   $('#m').val('');
   if (message.text.trim().length !== 0) { // Gestion message vide
@@ -54,35 +61,57 @@ socket.on('user:etat', function(etat){
     $('#chat input').focus(); // Focus sur le champ du message
   }
 });
-socket.on('user:new', function(username){
+socket.on('user:new', function(user){
   // $('#users').append($('<li class="new">'));
-  $('#users').append($('<li class="' + username + ' new">').html(username + '<span class="typing">est en train d\'écrire</span>'));
+  if(user.cat == $_GET("categorie")){
+    $('#messages').append($('<li class="' + user.username + ' login">').html(user.username + '<span class="info">viens de se connecter</span>'));
+    $('#users').append($('<li class="' + user.username + ' new">').html(user.username + '<span class="typing">est en train d\'écrire</span>'));
+  }
 });
-socket.on('user:list', function(users){
+socket.on('user:list', function(users, messages){
   let elements = '';
   for(let user of users) {
-    elements += '<li class="' + user.username + ' new">'+user.username+' <span class="typing">est en train d\'écrire</span></li>';
-    // $('#users').append($('<li class="' + user.username + ' new">').html(user.username));
+    if(user.cat == $_GET("categorie")){
+      elements += '<li class="' + user.username + ' new">'+user.username+' <span class="typing">est en train d\'écrire</span></li>';
+    }
+      // $('#users').append($('<li class="' + user.username + ' new">').html(user.username));
   }
   $('#users').html(elements);
+
+  //Historique
+  for(let message of messages){
+    if(message.cat == $_GET("categorie")){
+      $('#messages').append($('<li>').html('<span class="username">' + message.username + '</span> ' + message.text));
+    }
+  }
+
 });
 socket.on('user:disconnect', function(user){
-  $('#users').children().attr('class', user.username).remove();
-  
+  if( user.cat == $_GET('categorie')){
+    $('#users').children().attr('class', user.username).remove();
+    $('#messages').append($('<li class="' + user.username + ' logout">').html(user.username + '<span class="info">viens de se déconnecter</span>'));
+  }
+
   // $('#users').append($('<li class="' + user.username + ' new">').html(user.username + '<span class="typing">est en train d\'écrire</span>'));
   //   setTimeout(function () {
   //     $('#users li.new').removeClass('new');
   //   }, 1000);
 });
 socket.on('user:receiveMessage', function(data) {
-  $('#messages').append($('<li>').html('<span class="username">' + data.username + '</span> ' + data.message));
-});
-socket.on('user:typing', function(etat, username){
-  if(etat) {
-    $('#users li.' + username + ' span.typing').show();
-  } else {
-    $('#users li.' + username + ' span.typing').hide();
+  console.log(data);
+  if(data.message.cat == $_GET("categorie")){
+    $('#messages').append($('<li>').html('<span class="username">' + data.username + '</span> ' + data.message.text));
   }
+});
+socket.on('user:typing', function(etat, user){
+  if(user.cat == $_GET('categorie')){
+     if(etat) {
+        $('#users li.' + user.username + ' span.typing').show();
+     } else {
+     $('#users li.' + user.username + ' span.typing').hide();
+  }
+}
+ 
 });
 /**
  * Réception d'un message
@@ -164,3 +193,19 @@ $('#m').keyup(function () {
 //     $('#users li.' + typingUsers[i].user + ' span.typing').show();
 //   }
 // });
+
+function $_GET(param) {
+  //Fonction qui copie le $_GET de php
+	var vars = {};
+	window.location.href.replace( location.hash, '' ).replace( 
+		/[?&]+([^=&]+)=?([^&]*)?/gi, // regexp
+		function( m, key, value ) { // callback
+			vars[key] = value !== undefined ? value : '';
+		}
+	);
+
+	if ( param ) {
+		return vars[param] ? vars[param] : null;	
+	}
+	return vars;
+}

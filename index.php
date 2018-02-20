@@ -5,12 +5,11 @@
   <div class="category-auto auto">
 
     <div class="sub-category">
-      <div class="s-cat " id='mecanique'>
-      <div class="s-cat-container">
-          ici viendra le chat
+      <div class="s-cat" id='mecanique'>
+        <div class="s-cat-container">
         </div>
       </div>
-      <div class="s-cat mecanique" id="cat1"></div>
+    
       <div class="s-cat mecanique"></div>
       <div class="s-cat mecanique"></div>
       <div class="s-cat mecanique"></div>
@@ -18,37 +17,186 @@
       <div class="s-cat mecanique"></div>
       <div class="s-cat mecanique"></div>
       <div class="s-cat mecanique"></div>
-      <div class="s-cat mecanique"></div>
-      <div class="s-cat mecanique"></div>
-      <div class="s-cat mecanique"></div>
-      <div class="s-cat mecanique"></div>
-      <div class="s-cat mecanique"></div>
-      <div class="s-cat mecanique "></div>
 
     </div>
   </div>
 
   <div class="category-auto astro">
   <div class="sub-category">
-  <div class="s-cat mecanique"></div>
-  <div class="s-cat mecanique"></div>
-  <div class="s-cat mecanique"> 
+    <div class="s-cat mecanique"></div>
+    <div class="s-cat mecanique"></div>
+    <div class="s-cat mecanique"> 
     <div class="s-cat-container">
-      sdkqsj
     </div>
   </div>
-  <div class="s-cat mecanique "></div>
 
 </div>
 </div>
 
-  <div class="category-auto"></div>
-  <div class="category-auto"></div>
-  <div class="category-auto"></div>
-  <div class="category-auto"></div>
-  <div class="category-auto"></div>
-  <div class="category-auto"></div>
-  <div class="category-auto"></div>
+
+<div class="category-auto culture">
+
+    <div class="sub-category">
+      <div class="s-cat" id='mecanique'>
+        <div class="s-cat-container">
+        </div>
+      </div>
+    
+      <div class="s-cat mecanique"></div>
+      <div class="s-cat mecanique"></div>
+      <div class="s-cat mecanique"></div>
+      <div class="s-cat mecanique"></div>
+      <div class="s-cat mecanique"></div>
+      <div class="s-cat mecanique"></div>
+      <div class="s-cat mecanique"></div>
+
+    </div>
+  </div>
+
+  <div class="category-auto electronique">
+
+    <div class="sub-category">
+      <div class="s-cat" id='mecanique'>
+        <div class="s-cat-container">
+        </div>
+      </div>
+
+      <div class="s-cat mecanique"></div>
+      <div class="s-cat mecanique"></div>
+      <div class="s-cat mecanique"></div>
+      <div class="s-cat mecanique"></div>
+      <div class="s-cat mecanique"></div>
+      <div class="s-cat mecanique"></div>
+      <div class="s-cat mecanique"></div>
+
+    </div>
+    </div>
+
+
+
+    <div class="category-auto gastronomie">
+
+<div class="sub-category">
+  <div class="s-cat" id='mecanique'>
+    <div class="s-cat-container">
+    </div>
+  </div>
+
+  <div class="s-cat mecanique"></div>
+  <div class="s-cat mecanique"></div>
+  <div class="s-cat mecanique"></div>
+  <div class="s-cat mecanique"></div>
+  <div class="s-cat mecanique"></div>
+  <div class="s-cat mecanique"></div>
+  <div class="s-cat mecanique"></div>
+
+</div>
+</div>
+
+
+
+<div class="category-auto mode">
+
+    <div class="sub-category">
+      <div class="s-cat" id='mecanique'>
+        <div class="s-cat-container">
+        </div>
+      </div>
+
+      <div class="s-cat mecanique"></div>
+      <div class="s-cat mecanique"></div>
+      <div class="s-cat mecanique"></div>
+      <div class="s-cat mecanique"></div>
+      <div class="s-cat mecanique"></div>
+      <div class="s-cat mecanique"></div>
+      <div class="s-cat mecanique"></div>
+
+    </div>
+    </div>
+
+
+    <div class="category-auto science">
+
+<div class="sub-category">
+  <div class="s-cat" id='mecanique'>
+    <div class="s-cat-container">
+    </div>
+  </div>
+
+  <div class="s-cat mecanique"></div>
+  <div class="s-cat mecanique"></div>
+  <div class="s-cat mecanique"></div>
+  <div class="s-cat mecanique"></div>
+  <div class="s-cat mecanique"></div>
+  <div class="s-cat mecanique"></div>
+  <div class="s-cat mecanique"></div>
+
+</div>
+</div>
+
+
+
+<div class="category-auto sports">
+
+    <div class="sub-category">
+      <div class="s-cat" id='mecanique'>
+        <div class="s-cat-container">
+        </div>
+      </div>
+
+      <div class="s-cat mecanique"></div>
+      <div class="s-cat mecanique"></div>
+      <div class="s-cat mecanique"></div>
+      <div class="s-cat mecanique"></div>
+      <div class="s-cat mecanique"></div>
+      <div class="s-cat mecanique"></div>
+      <div class="s-cat mecanique"></div>
+
+    </div>
+    </div>
+
+
+
+    <div class="category-auto voyages">
+
+<div class="sub-category">
+  <div class="s-cat" id='mecanique'>
+    <div class="s-cat-container">
+    </div>
+  </div>
+
+  <div class="s-cat mecanique"></div>
+  <div class="s-cat mecanique"></div>
+  <div class="s-cat mecanique"></div>
+  <div class="s-cat mecanique"></div>
+  <div class="s-cat mecanique"></div>
+  <div class="s-cat mecanique"></div>
+  <div class="s-cat mecanique"></div>
+
+</div>
+</div>
+
+
+
+<div class="category-auto ans">
+
+    <div class="sub-category">
+      <div class="s-cat" id='mecanique'>
+        <div class="s-cat-container">
+        </div>
+      </div>
+
+      <div class="s-cat mecanique"></div>
+      <div class="s-cat mecanique"></div>
+      <div class="s-cat mecanique"></div>
+      <div class="s-cat mecanique"></div>
+      <div class="s-cat mecanique"></div>
+      <div class="s-cat mecanique"></div>
+      <div class="s-cat mecanique"></div>
+
+    </div>
+    </div>
+
 
 
 </div>

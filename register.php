@@ -1,5 +1,5 @@
 <?php 
-
+session_start();
 require_once 'php/functions.php';
 
 if(!empty($_POST)){
@@ -81,7 +81,6 @@ if(!empty($_POST)){
         $_SESSION['flash']['success'] = "Un email de confirmation vous a été envoyé pour valider votre compte";
         header('Location: login.php');
         exit();
-        alert('Votre inscription a réussi ! Amusez-vous bien sur Myhobbie.fr');
     }
 }
 

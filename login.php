@@ -8,6 +8,10 @@ if(isset($_SESSION['auth'])){
     exit();
 }
 
+if( isset( $_SESSION['flash']['success'] ) ){
+    echo $_SESSION['flash']['success'];
+}
+
     if(!empty($_POST) && !empty($_POST['username']) && !empty($_POST['password'])){
 
         require_once 'php/database.php';

@@ -62,6 +62,42 @@ body {margin:0;}
   background-image: url(../images/astro.jpeg);
 }
 
+.culture{
+  background-image: url(../images/culture.jpeg);
+}
+
+.electronique{
+  background-image: url(../images/electronique.jpeg);
+}
+
+.gastronomie{
+  background-image: url(../images/gastronomie.jpeg);
+}
+
+.mode{
+  background-image: url(../images/mode.jpeg);
+}
+
+.science{
+  background-image: url(../images/science.jpeg);
+}
+
+.sports{
+  background-image: url(../images/sports.jpeg);
+}
+
+.voyages{
+  background-image: url(../images/voyages.jpeg);
+}
+
+.ans{
+  background-image: url(../images/ans.jpeg);
+}
+
+
+
+
+
 .category-auto {
     background-color: blue;
     width: 30%;
