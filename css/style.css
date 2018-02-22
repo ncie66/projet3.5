@@ -54,17 +54,53 @@ body {margin:0;}
 .auto{
   background-image: url(../images/automobile.jpeg);
 }
-#mecanique{
+
+.carrosserie{
+  background-image: url(../images/carrosserie.jpeg);
+}
+
+.mecanique{
   background-image: url(../images/mecanique.png);
 
 }
+
+
+
+
+
 .astro{
   background-image: url(../images/astro.jpeg);
 }
 
+.astronomie{
+  background-image: url(../images/astronomie.jpeg);
+}
+.cosmologie{
+  background-image: url(../images/cosmologie.jpeg);
+}
+.observation{
+  background-image: url(../images/observation.jpeg);
+}
+
+
 .culture{
   background-image: url(../images/culture.jpeg);
 }
+
+.livres{
+  background-image: url(../images/livres.jpeg);
+}
+
+.religions{
+  background-image: url(../images/religions.jpeg);
+}
+.trouvemadestination{
+  background-image: url(../images/trouvemadestination.jpeg);
+}
+
+
+
+
 
 .electronique{
   background-image: url(../images/electronique.jpeg);
@@ -73,6 +109,13 @@ body {margin:0;}
 .gastronomie{
   background-image: url(../images/gastronomie.jpeg);
 }
+
+
+
+
+
+
+
 
 .mode{
   background-image: url(../images/mode.jpeg);
@@ -139,6 +182,36 @@ body {margin:0;}
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+.trouvemadestination{
+  background-image: url(../images/trouvemadestination.jpeg);
+}
+
+.destinationprefere{
+  background-image: url(../images/destinationprefere.jpg);
+}
+
+
+
+.cryptomonnaie{
+  background-image: url(../images/cryptomonnaie.jpeg);
+}
+
+.trading{
+  background-image: url(../images/trading.jpeg);
+}
 
 .category-auto {
     background-color: blue;

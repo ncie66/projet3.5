@@ -5,53 +5,53 @@
   <div class="category-auto auto">
 
     <div class="sub-category">
-      <div class="s-cat" id='mecanique'>
-        <div class="s-cat-container">
-        </div>
+      
+      <div class="s-cat carrosserie" id='carrosserie'>
+        <div class="s-cat-container"></div>
       </div>
-    
-      <div class="s-cat mecanique"></div>
-      <div class="s-cat mecanique"></div>
-      <div class="s-cat mecanique"></div>
-      <div class="s-cat mecanique"></div>
-      <div class="s-cat mecanique"></div>
-      <div class="s-cat mecanique"></div>
-      <div class="s-cat mecanique"></div>
+      
+        <div class="s-cat mecanique" id='mecanique'>
+          <div class="s-cat-container"></div>
+        </div>
 
     </div>
   </div>
 
-  <div class="category-auto astro">
+<div class="category-auto astro">
   <div class="sub-category">
-    <div class="s-cat mecanique"></div>
-    <div class="s-cat mecanique"></div>
-    <div class="s-cat mecanique"> 
-    <div class="s-cat-container">
-    </div>
-  </div>
 
-</div>
+    <div class="s-cat astronomie" id='astronomie'>
+      <div class="s-cat-container"></div>
+    </div>
+
+    <div class="s-cat cosmologie" id='cosmologie'>
+      <div class="s-cat-container"></div>
+    </div>
+
+    <div class="s-cat observation" id='observation'>
+      <div class="s-cat-container"></div>
+    </div>
+
+  </div>
 </div>
 
 
 <div class="category-auto culture">
 
-    <div class="sub-category">
-      <div class="s-cat" id='mecanique'>
-        <div class="s-cat-container">
-        </div>
+  <div class="sub-category">
+    <div class="s-cat livres" id='livres'>
+      <div class="s-cat-container">
       </div>
-    
-      <div class="s-cat mecanique"></div>
-      <div class="s-cat mecanique"></div>
-      <div class="s-cat mecanique"></div>
-      <div class="s-cat mecanique"></div>
-      <div class="s-cat mecanique"></div>
-      <div class="s-cat mecanique"></div>
-      <div class="s-cat mecanique"></div>
-
+    </div>
+  
+    <div class="s-cat religions" id='religions'>
+    <div class="s-cat-container">
     </div>
   </div>
+
+
+  </div>
+</div>
 
   <div class="category-auto electronique">
 
@@ -194,21 +194,18 @@
 
 
 
-    <div class="category-auto voyages">
+  <div class="category-auto voyages">
 
-<div class="sub-category">
-  <div class="s-cat" id='mecanique'>
-    <div class="s-cat-container">
-    </div>
-  </div>
+    <div class="sub-category">
+      <div class="s-cat trouvemadestination" id='trouvemadestination'>
+        <div class="s-cat-container">
+        </div>
+      </div>
 
-  <div class="s-cat mecanique"></div>
-  <div class="s-cat mecanique"></div>
-  <div class="s-cat mecanique"></div>
-  <div class="s-cat mecanique"></div>
-  <div class="s-cat mecanique"></div>
-  <div class="s-cat mecanique"></div>
-  <div class="s-cat mecanique"></div>
+      <div class="s-cat destinationprefere" id='destinationprefere'>
+        <div class="s-cat-container">
+        </div>
+      </div>
 
 </div>
 </div>
@@ -218,18 +215,14 @@
 <div class="category-auto ans">
 
     <div class="sub-category">
-      <div class="s-cat" id='mecanique'>
-        <div class="s-cat-container">
-        </div>
+
+      <div class="s-cat cryptomonnaie" id='cryptomonnaie'>
+        <div class="s-cat-container"></div>
       </div>
 
-      <div class="s-cat mecanique"></div>
-      <div class="s-cat mecanique"></div>
-      <div class="s-cat mecanique"></div>
-      <div class="s-cat mecanique"></div>
-      <div class="s-cat mecanique"></div>
-      <div class="s-cat mecanique"></div>
-      <div class="s-cat mecanique"></div>
+      <div class="s-cat trading" id='trading'>
+        <div class="s-cat-container"></div>
+      </div>
 
     </div>
     </div>
