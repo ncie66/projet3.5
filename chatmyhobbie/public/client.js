@@ -32,6 +32,7 @@ $('#login form').submit(function (e) {
   };
   console.log(cat);
   if (username.length > 0) { // Si le champ de connexion n'est pas vide
+
     socket.emit('user:connect', body);
   }
 });
@@ -56,9 +57,12 @@ $('#chat form').submit(function (e) {
 
 ///////////////////////////
 socket.on('user:etat', function(etat){
-  if (etat) {
+  if (etat == true) {
     $('div.chat').removeAttr('id'); // Cache formulaire de connexion
     $('#chat input').focus(); // Focus sur le champ du message
+  }
+  else{
+    alert("L\'utilisateur existe déjà");
   }
 });
 socket.on('user:new', function(user){
@@ -79,9 +83,11 @@ socket.on('user:list', function(users, messages){
   $('#users').html(elements);
 
   //Historique
+  console.log(messages);
   for(let message of messages){
-    if(message.cat == $_GET("categorie")){
-      $('#messages').append($('<li>').html('<span class="username">' + message.username + '</span> ' + message.text));
+    
+    if(message.text.cat == $_GET("categorie")){
+      $('#messages').append($('<li>').html('<span class="username">' + message.username + '</span> ' + message.text.text));
     }
   }
 

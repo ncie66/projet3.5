@@ -1,5 +1,6 @@
+
 <link rel="stylesheet" href="chatmyhobbie/public/style.css" />
-<div> <button><a href="index.php">  Retour au menu </button> </div>
+<div><a href="index.php">Retour au menu</a></div>
 <div class="chat" id="logged-out">
     <section id="chat">
       <ul id="messages">

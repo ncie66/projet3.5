@@ -23,10 +23,25 @@ io.sockets.on("connection", function( socket ){
             username: body.username,
             cat: body.cat
         };
-        loggedUser = user;
-        MServer.addUser(user);
-        socket.emit('user:etat', true);
-        socket.broadcast.emit('user:new', user);
+        console.log("test");
+        var match = false;
+        
+        for(let connected_user of MServer.users){
+            if(connected_user.username == user.username){
+                match = true;
+            }
+        }
+;
+        if(match == false){
+            loggedUser = user;
+            MServer.addUser(user);
+            socket.emit('user:etat', true);
+            socket.broadcast.emit('user:new', user);    
+        }
+        else{
+            socket.emit('user:etat', false);
+        }
+        
     });
 
     socket.on("user:typing", function(etat){
@@ -40,7 +55,7 @@ io.sockets.on("connection", function( socket ){
             username: user.username,
             message: message
         };
-        MServer.addMessage( user.username, message.text );
+        MServer.addMessage( user.username, message );
         socket.broadcast.emit('user:receiveMessage', data);
     });
 
