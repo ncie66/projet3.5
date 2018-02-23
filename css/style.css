@@ -213,6 +213,35 @@ body {margin:0;}
   background-image: url(../images/trading.jpeg);
 }
 
+.jeux{
+  background-image: url(../images/jeux.jpeg);
+}
+
+.arcade{
+  background-image: url(../images/arcade.jpeg);
+}
+
+.mmo{
+  background-image: url(../images/mmo.jpeg);
+}
+
+
+.informatique{
+  background-image: url(../images/informatique.jpeg);
+}
+
+.developpeur{
+  background-image: url(../images/developpeur.jpeg);
+}
+
+.maintenance{
+  background-image: url(../images/maintenance.jpeg);
+}
+
+.serveur{
+  background-image: url(../images/serveur.jpeg);
+}
+
 .category-auto {
     background-color: blue;
     width: 30%;

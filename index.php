@@ -193,21 +193,19 @@
 </div>
 
 
-
-  <div class="category-auto voyages">
+<div class="category-auto voyages">
 
     <div class="sub-category">
+
       <div class="s-cat trouvemadestination" id='trouvemadestination'>
-        <div class="s-cat-container">
-        </div>
+        <div class="s-cat-container"></div>
       </div>
 
       <div class="s-cat destinationprefere" id='destinationprefere'>
-        <div class="s-cat-container">
-        </div>
+        <div class="s-cat-container"></div>
       </div>
 
-</div>
+  </div>
 </div>
 
 
@@ -216,16 +214,52 @@
 
     <div class="sub-category">
 
-      <div class="s-cat cryptomonnaie" id='cryptomonnaie'>
+      <div class="s-cat " id=''>
         <div class="s-cat-container"></div>
       </div>
 
-      <div class="s-cat trading" id='trading'>
+      <div class="s-cat " id=''>
         <div class="s-cat-container"></div>
       </div>
 
     </div>
+</div>
+
+<div class="category-auto jeux">
+
+    <div class="sub-category">
+
+      <div class="s-cat arcade" id='arcade'>
+        <div class="s-cat-container"></div>
+      </div>
+
+      <div class="s-cat mmo" id='mmo'>
+        <div class="s-cat-container"></div>
+      </div>
+
     </div>
+</div>
+
+
+<div class="category-auto informatique">
+
+    <div class="sub-category">
+
+      <div class="s-cat developpeur" id='developpeur'>
+        <div class="s-cat-container"></div>
+      </div>
+
+      <div class="s-cat maintenance" id='maintenance'>
+        <div class="s-cat-container"></div>
+      </div>
+
+      <div class="s-cat serveur" id='serveur'>
+        <div class="s-cat-container"></div>
+      </div>
+
+    </div>
+</div>
+
 
 
 
